@@ -13,9 +13,11 @@ int main()
 	 from which the pointer variable has to be dereferenced*/
 	ptr=&a;
 	a=10;
-	printf("the value stored in the ptr location is %d\n",*ptr);//here *ptr is called as dereferencing 
+	printf("the value stored in the ptr location is %d\n",*ptr); 
 	printf("the address of variable a is %d\n",ptr);
 	printf("the value of a is %d\n",a);
+	*ptr=12;
+	printf("the value of a after dereferencing is %d\n",a);
 	printf("the address of a variable is %d\n",&a);
 	return 0;
 }
